@@ -13,7 +13,7 @@ export const receiveCurrentUser = user => {
 
 export const logoutCurrentUser = () => {
     return {
-        type: LOGOUT
+        type: LOGOUT_CURRENT_USER
     };
 };
 
@@ -54,7 +54,7 @@ export const logout = () => {
     return dispatch => {
         return ApiUtil.logout().then(
             () => {
-                return dispatch(logoutCurrentUser())
+                return dispatch(logoutCurrentUser());
             }
         );
     };

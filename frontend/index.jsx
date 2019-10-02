@@ -5,6 +5,7 @@ import Root from "./components/root";
 
 //test
     // import { signup, login, logout } from './util/session_api_util';
+    // import { signup, login, logout } from './actions/session_actions';
 //test
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,13 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // window.signup = signup;
         // window.login = login;
         // window.logout = logout;
-
+        
         // const store = configureStore();
         // window.getState = store.getState;
         // window.dispatch = store.dispatch;
+        
+        // window.signup = signup;
+        // window.login = login;
+        // window.logout = logout;
 
     //test
-
+        
     let store;
     if (window.currentUser) {
         const preloadedState = {
@@ -33,7 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         store = configureStore();
     }
-
+    
+    //test
+    // window.getState = store.getState;
+    // window.dispatch = store.dispatch;
+    //test
+        
     const root = document.getElementById('root');
     // ReactDOM.render(<h1>Meet your next favorite book.</h1>, root);
     ReactDOM.render(<Root store={store} />, root);
