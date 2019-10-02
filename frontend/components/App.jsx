@@ -6,14 +6,13 @@ import SigninFormContainer from './session/signin_form_container';
 const App = () => (
     <div>
         <Link to={`/`}>greatbooks</Link>
-        <h1>Meet your next favorite book!</h1>
+
+        <h1>Meet your next favorite book!</h1>{/* remove later */}
         <Route exact path="/" component={SigninFormContainer} />
-        <br/>
         <Route exact path="/" component={SignupFormContainer} />
-        <Switch>
-            <Route exact path="/sign_in" component={SigninFormContainer} />
-            <Route exact path="/sign_up" component={SignupFormContainer} />
-        </Switch>
+        <Route exact path="/sign_in" component={SigninFormContainer} />
+        <Route exact path="/sign_up" component={SignupFormContainer} />
+        {/* <Switch></Switch> */}
     </div>
 );
 
