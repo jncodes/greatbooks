@@ -20,6 +20,7 @@ export default class SessionForm extends React.Component {
         return (
             <form onSubmit={() => this.handleSubmit}>
                 {this.props.formType}
+                {this.props.heading}
                 <br/>
                 <label htmlFor="username">Name: </label>
                 <input type="text" />
@@ -28,6 +29,8 @@ export default class SessionForm extends React.Component {
                 <input type="password" />
                 <br/>
                 <button type="submit">{this.props.formType}</button>
+                {this.props.memberStatus}
+                {this.props.navLink}
             </form>
         );
     }

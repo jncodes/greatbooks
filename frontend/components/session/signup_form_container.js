@@ -9,6 +9,8 @@ const msp = (state, ownProps) => {
         errors: state.errors.session,
         formType: 'Sign up',
         navLink: <Link to={`/sign_in`}>Sign in</Link>,
+        memberStatus: 'Already a member?',
+        heading: ' for Greatbooks',
     };
 };
 
