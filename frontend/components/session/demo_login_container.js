@@ -7,7 +7,7 @@ const msp = (state, ownProps) => {
         return Math.random() * (max - min) + min;
     }
     return { 
-        demo_user: { username: `demo${getRandomArbitrary(100, 1000)}`, password: "worldsbestrecuiter" }
+        demo_user: { username: `demo${getRandomArbitrary(100, 10000000)}`, password: "worldsbestrecuiter" }
     };
 };
 

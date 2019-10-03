@@ -6,6 +6,7 @@ import Root from "./components/root";
 //test
     // import { signup, login, logout } from './util/session_api_util';
     // import { signup, login, logout } from './actions/session_actions';
+    import * as SearchApi from './util/search_util';
 //test
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,6 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
     //test
     // window.getState = store.getState;
     // window.dispatch = store.dispatch;
+    //test
+
+    //test
+    window.search = SearchApi.search;
+    window.title = SearchApi.title;
+    window.author = SearchApi.author;
+    window.genre = SearchApi.genre;
     //test
         
     const root = document.getElementById('root');
