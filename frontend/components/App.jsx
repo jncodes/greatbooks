@@ -5,11 +5,12 @@ import SignupFormContainer from './session/signup_form_container';
 import SigninFormContainer from './session/signin_form_container';
 import Homepage from './session/homepage';
 import Logout from './session/logout_container';
+import NavBarSearchContainer from '../components/search/navbar_search_container';
 
 const App = () => (
     <div>
-        <Link to={`/`}>greatbooks</Link>
-        {/* Search Bar */}
+        <Link to={`/`}>greatbooks</Link><hr/>
+        <Route path='/' component={NavBarSearchContainer} />
         <hr/>
         <AuthRoute exact path="/" component={Homepage} />
         <AuthRoute exact path="/sign_in" component={SigninFormContainer} />

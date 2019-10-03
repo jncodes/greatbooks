@@ -27,7 +27,7 @@ export default class SessionForm extends React.Component {
                 {this.props.formType}
                 {this.props.heading}
                 <br/>
-                <label htmlFor="username">Name: </label>
+                <label htmlFor="username">Username: </label>
                 <input onChange={this.update('username')} value={this.state.username} type="text" />
                 <br />
                 <label htmlFor="password">Password: </label>
