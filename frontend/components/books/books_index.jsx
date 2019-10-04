@@ -10,7 +10,6 @@ const BooksIndex = props => {
             let title = book.volumeInfo.title || 'Not available.';
             let authors = book.volumeInfo.authors || ['Not available.'];
             authors = authors.join(', ');
-            debugger
             let genres = book.volumeInfo.categories || ['Not available.'];
             genres = genres.join(', ');
             let description = book.volumeInfo.description || 'Not available.';
