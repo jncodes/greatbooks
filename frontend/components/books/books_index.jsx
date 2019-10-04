@@ -13,7 +13,8 @@ const BooksIndex = props => {
             let genres = book.volumeInfo.categories || ['Not available.'];
             genres = genres.join(', ');
             let description = book.volumeInfo.description || 'Not available.';
-            let image = book.volumeInfo.imageLinks.thumbnail;
+            let image = book.volumeInfo.imageLinks || 'Not available.';
+            image = image.thumbnail;
             return (
                 <BooksIndexItem
                     key={id}
