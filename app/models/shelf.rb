@@ -1,4 +1,6 @@
 class Shelf < ApplicationRecord
     validates :name, presence: true
-    validates 
+
+    belongs_to :user
+    has_many :shelved_books
 end

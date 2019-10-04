@@ -1,5 +1,4 @@
-class User < ApplicationRecord
-    
+class User < ApplicationRecord 
     validates :username, :session_token, presence: true, uniqueness: true
     validates :password_digest, presence: true
     validates :password, length: { minimum: 6, allow_nil: true }
@@ -8,7 +7,13 @@ class User < ApplicationRecord
 
     attr_reader :password
 
-    #associations
+    has_many :shelves
+    has_many :reviews
+
+    has_many :shelved_books,
+        through: :shelves,
+        source: :shelved_books
+
 
     def self.generate_session_token
         SecureRandom::urlsafe_base64
@@ -39,5 +44,4 @@ class User < ApplicationRecord
         return nil unless user && user.is_password?(password)
         user
     end
-
 end
