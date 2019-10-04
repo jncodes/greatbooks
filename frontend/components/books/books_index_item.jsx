@@ -7,7 +7,7 @@ const BooksIndexItem = (props) => {
             <li><img src={props.image} alt="Image unavailable." /></li>
             <li>Title: <Link to='#'>{props.title}</Link> by {props.authors}</li>
             <li>Description: {props.description}</li>
-            <li>Genres: {props.genre}</li>
+            <li>Genres: {props.genres}</li>
             <br/>
         </ul>
     );
