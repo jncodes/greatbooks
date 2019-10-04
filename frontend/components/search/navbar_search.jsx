@@ -8,6 +8,7 @@ export default class navbarSearch extends React.Component {
             query: ""
         };
         this.previewSearch = this.previewSearch.bind(this);
+        this.submitSearch = this.submitSearch.bind(this);
     }
 
     previewSearch(e) {
@@ -19,11 +20,18 @@ export default class navbarSearch extends React.Component {
         }); 
     }
 
+    submitSearch(e) {
+        e.preventDefault();
+        
+    }
+
     render() {
        return (
             <div>
-                <input onChange={this.previewSearch} placeholder="Search" type="search"/>
-                <button>Search</button>
+                <form onSubmit={this.submitSearch}>
+                    <input onChange={this.previewSearch} placeholder="Search" type="search"/>
+                    <input type="submit" value="Search" />
+                </form>
             </div>
         ); 
     }

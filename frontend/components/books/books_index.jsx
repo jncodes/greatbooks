@@ -3,7 +3,7 @@ import BooksIndexItem from './books_index_item';
 
 const BooksIndex = props => {
     if (typeof props.books === 'undefined') {
-        return null
+        return null;
     } else {
         const books = props.books.map(book => {
             let id = book.id;
