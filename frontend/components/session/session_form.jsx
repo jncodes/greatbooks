@@ -5,6 +5,7 @@ export default class SessionForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            name: "",
             email: "",
             password: ""
         };
@@ -21,22 +22,62 @@ export default class SessionForm extends React.Component {
         this.props.processForm(user);
     }
 
+    renderErrors() {
+        if (this.props.errors.length === 0) {
+            return null;
+        } else {
+            return (
+                <ul>
+                    {
+                        this.props.errors.map((error, idx) => (
+                            <li key={`error-${idx}`}>{error}</li>
+                        ))
+                    }
+                </ul>
+            );
+        }
+    }
+
     render() {
-        return (
-            <form onSubmit={this.handleSubmit}>
-                {this.props.formType}
-                {this.props.heading}
-                <br/>
-                <label htmlFor="email">Email: </label>
-                <input onChange={this.update('email')} value={this.state.email} type="text" />
-                <br />
-                <label htmlFor="password">Password: </label>
-                <input onChange={this.update('password')} value={this.state.password} type="password" />
-                <br/>
-                <input value={this.props.formType} type="submit" />
-                {this.props.memberStatus}
-                {this.props.navLink}
-            </form>
-        );
+        if (this.props.formType === 'Sign up') {
+            return (    
+                <form onSubmit={this.handleSubmit}>
+                    {this.renderErrors()}
+                    {this.props.formType}
+                    {this.props.heading}
+                    <br />
+                    <label htmlFor="name">Name: </label>
+                    <input onChange={this.update('name')} value={this.state.name} type="text" />
+                    <br />
+                    <label htmlFor="email">Email: </label>
+                    <input onChange={this.update('email')} value={this.state.email} type="email" />
+                    <br />
+                    <label htmlFor="password">Password: </label>
+                    <input onChange={this.update('password')} value={this.state.password} type="password" />
+                    <br />
+                    <input value={this.props.formType} type="submit" />
+                    {this.props.memberStatus}
+                    {this.props.navLink}
+                </form>
+            );
+        } else {
+            return (
+                <form onSubmit={this.handleSubmit}>
+                    {this.renderErrors()}
+                    {this.props.formType}
+                    {this.props.heading}
+                    <br/>
+                    <label htmlFor="email">Email: </label>
+                    <input onChange={this.update('email')} value={this.state.email} type="email" />
+                    <br />
+                    <label htmlFor="password">Password: </label>
+                    <input onChange={this.update('password')} value={this.state.password} type="password" />
+                    <br/>
+                    <input value={this.props.formType} type="submit" />
+                    {this.props.memberStatus}
+                    {this.props.navLink}
+                </form>
+            );
+        }
     }
 }
