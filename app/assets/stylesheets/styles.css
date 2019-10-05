@@ -1,0 +1,85 @@
+body {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    background-color: #f9f8f3;
+}
+
+.signin input[type="submit"] {
+    color: white;
+    background-color: rgb(56,33,16);
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 2px;
+}
+
+.signup { 
+    display: block;
+    float: right;
+    color: rgb(56,33,16);
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 20px;
+    margin-top: 25px;
+    text-align: left;
+    width: 280px;
+}
+
+.signup input {
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: #DCD6CC 1px solid;
+    color: #333333;
+    resize: none;
+    width: 270px;
+    padding: 7px 5px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: text;
+}
+
+.signup input[type="submit"] {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fdd05f;
+    font-size: 18px;
+    width: 85px;
+    line-height: 22px;
+    color: #333333;
+    display: inline-block;
+}
+
+.next_to_signup {
+    color: #706b5f;
+    float: right;
+    font-size: 10px;
+    line-height: 12px;
+    width: 180px;
+}
+
+.homepage-greet {
+    font-size: 3em;
+}
+
+.home-logo {
+    text-decoration: none;
+    height: 43px;
+    margin: 3px 13px 0px 5px;
+    width: 197px;
+    text-align: justify;
+    color: rgb(56,33,16);
+    display:inline-block;
+    padding: 0px;
+    font-size:36px;
+    font-weight: lighter;
+}
+
+.home-logo strong {
+    font-weight: bolder;
+}
+
+/* #signedOutHome #navBar {
+    height: 65px;
+    padding-top: 10px;
+    
+    display: block;
+} */

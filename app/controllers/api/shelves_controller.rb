@@ -1,6 +1,7 @@
 class Api::ShelvesController < ApplicationController
     def create
         @shelf = Shelf.new(shelf_params)
+        @shelf.user_id = current_user.id
 
         if @shelf.save
             render :show
@@ -11,7 +12,6 @@ class Api::ShelvesController < ApplicationController
 
     def update
         @shelf = Shelf.find(params[:id])
-
         if @shelf.update(shelf_params)
             render :show
         else
@@ -32,7 +32,6 @@ class Api::ShelvesController < ApplicationController
 
     private
     def shelf_params
-        params.require(:shelf).permit(:name, :exclusive, :user_id)
-        # exclusive and user_id - hidden inputs???
+        params.require(:shelf).permit(:name)
     end
 end

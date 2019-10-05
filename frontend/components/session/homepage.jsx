@@ -5,7 +5,7 @@ import DemoLoginContainer from './demo_login_container';
 
 const Homepage = () => (
     <div>
-        <h1>Meet your next favorite book!</h1>
+        <h1 className="homepage-greet">Meet your next favorite book!</h1>
         <DemoLoginContainer /><br />
         <SigninFormContainer /><br/>
         <SignupFormContainer />

@@ -10,7 +10,7 @@ import BooksIndexContainer from '../components/books/books_index_container';
 
 const App = () => (
     <div>
-        <Link to={`/`}>greatbooks</Link><hr/>
+        <Link className="home-logo" to={`/`}><span>great</span><strong>books</strong></Link><hr/>
         <Route path='/' component={NavBarSearchContainer} />
         <hr/>
         <AuthRoute exact path="/" component={Homepage} />
