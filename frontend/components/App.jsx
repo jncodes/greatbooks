@@ -10,10 +10,8 @@ import BooksIndexContainer from '../components/books/books_index_container';
 
 const App = () => (
     <div>
-        <Link className="home-logo" to={`/`}><span>great</span><strong>books</strong></Link><hr/>
-        <Route path='/' component={NavBarSearchContainer} />
-        <hr/>
         <AuthRoute exact path="/" component={Homepage} />
+        <Route path='/' component={NavBarSearchContainer} />
         <AuthRoute exact path="/sign_in" component={SigninFormContainer} />
         <AuthRoute exact path="/sign_up" component={SignupFormContainer} />
         <ProtectedRoute path="/" component={Logout}/>

@@ -1,14 +1,13 @@
 import React from 'react';
-import SignupFormContainer from './signup_form_container';
-import SigninFormContainer from './signin_form_container';
-import DemoLoginContainer from './demo_login_container';
+import HeaderTopNav from '../header_top_nav';
+import HeaderSecondNav from '../header_second_nav';
 
 const Homepage = () => (
     <div>
-        <h1 className="homepage-greet">Meet your next favorite book!</h1>
-        <DemoLoginContainer /><br />
-        <SigninFormContainer /><br/>
-        <SignupFormContainer />
+        <HeaderTopNav />
+        <hr/>
+        <HeaderSecondNav />
+        <hr/>
     </div>
 );
 

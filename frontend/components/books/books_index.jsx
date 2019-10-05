@@ -6,7 +6,7 @@ const BooksIndex = props => {
         return null;
     } else {
         const books = props.books.map(book => {
-            let id = book.id;
+            let id = book.id + book.etag;
             let title = book.volumeInfo.title || 'Not available.';
             let authors = book.volumeInfo.authors || ['Not available.'];
             authors = authors.join(', ');

@@ -44,25 +44,40 @@ export default class SessionForm extends React.Component {
         return (    
             <form className={style} onSubmit={this.handleSubmit}>
                 {this.renderErrors()}
-                {this.props.formType}
-                <span className="">{this.props.heading}</span>
-                <br />
+                {/* {this.props.formType} */}
+                {/* <span className="">{this.props.heading}</span> */}
                 {this.props.formType === 'Sign up' ? (
                     <>
                         <input onChange={this.update('name')} value={this.state.name} type="text" placeholder="Name" />
-                        <br />
                     </>
                 ) : (
                         null
                     )}
-
                 <input onChange={this.update('email')} value={this.state.email} type="email" placeholder="Email address" />
-                <br />
                 <input onChange={this.update('password')} value={this.state.password} type="password" placeholder="Password" />
-                <br />
                 <input value={this.props.formType} type="submit" />
-                <span className="next_to_signup" >{this.props.memberStatus}</span>
-                {this.props.navLink}
+                <br/>
+                {/* <span className="next_to_signup" >{this.props.memberStatus}<span>{this.props.navLink}</span></span> */}
+                {this.props.formType === 'Sign in' ? (
+                    <>
+                        <label className="next_to_signup">
+                            <input type="checkbox" defaultChecked />
+                            Remember me
+                            <span>Forgot it?</span>
+                        </label>
+                    </>
+                ) : (
+                        null
+                    )}
+                {this.props.formType === 'Sign up' ? (
+                    <>
+                        <span className="next_to_home">Click on the <strong>demo login</strong> to see
+                        <br/>more before signing up.
+                        </span>
+                    </>
+                ) : (
+                        null
+                    )}
             </form>
         );
     }
