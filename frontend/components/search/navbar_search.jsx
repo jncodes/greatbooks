@@ -51,10 +51,10 @@ export default class navbarSearch extends React.Component {
     
     render() {
         return (
-            <div>
+            <div className="searchbar">
                <form onSubmit={this.submitSearch}>
-                    <input onChange={this.previewSearch} placeholder="Search" type="search"/>
-                    <input type="submit" value="Search" />
+                    <input onChange={this.previewSearch} size="55" placeholder="Search" type="search"/>
+                    {/* <input type="submit" value="Search" /> */}
                 </form>
             </div>
         ); 

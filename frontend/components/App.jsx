@@ -7,6 +7,7 @@ import Homepage from './session/homepage';
 import Logout from './session/logout_container';
 import NavBarSearchContainer from '../components/search/navbar_search_container';
 import BooksIndexContainer from '../components/books/books_index_container';
+import Browse from './browse';
 
 const App = () => (
     <div>
@@ -16,6 +17,7 @@ const App = () => (
         <AuthRoute exact path="/sign_up" component={SignupFormContainer} />
         <ProtectedRoute path="/" component={Logout}/>
         <Route path='/' component={BooksIndexContainer} />
+        {/* <Browse /> */}
     </div>
 );
 

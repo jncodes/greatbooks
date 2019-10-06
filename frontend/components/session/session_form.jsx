@@ -48,6 +48,13 @@ export default class SessionForm extends React.Component {
                 {/* <span className="">{this.props.heading}</span> */}
                 {this.props.formType === 'Sign up' ? (
                     <>
+                        <span className="signuptop">New here? Create a free account!</span>
+                    </>
+                ) : (
+                        null
+                    )}
+                {this.props.formType === 'Sign up' ? (
+                    <>
                         <input onChange={this.update('name')} value={this.state.name} type="text" placeholder="Name" />
                     </>
                 ) : (

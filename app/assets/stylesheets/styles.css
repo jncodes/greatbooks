@@ -198,3 +198,25 @@ hr {
     font-weight: bold;
     text-transform: capitalize;
 }
+
+.signuptop {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 91px;
+    right: 22%;
+    color: black;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.searchbar input[type="search"] {
+    padding: 9px;
+    border: #333333 0.5px solid;
+    border-radius: 8px;
+    margin-right: 332px;
+}
