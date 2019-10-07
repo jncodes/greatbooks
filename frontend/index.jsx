@@ -7,8 +7,8 @@ import Root from "./components/root";
     // import { signup, login, logout } from './util/session_api_util';
     // import { signup, login, logout } from './actions/session_actions';
     // import * as SearchApi from './util/search_util';
-    // import { add_to_shelf, remove_from_shelf } from './util/books_api_util';
-    import { add_to_shelf, remove_from_shelf } from './actions/books_actions';
+    // import { add_to_shelf, remove_from_shelf, fetchShelvedBooks } from './util/books_api_util';
+    import { add_to_shelf, remove_from_shelf, fetchShelvedBooks } from './actions/books_actions';
 //test
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //test
     window.add_to_shelf = add_to_shelf;
     window.remove_from_shelf = remove_from_shelf;
+    window.fetchShelvedBooks = fetchShelvedBooks;
     //test
         
     const root = document.getElementById('root');

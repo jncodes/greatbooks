@@ -12,3 +12,11 @@ export const remove_from_shelf = id => {
         url: `/api/shelved_books/${id}`
     });
 };
+
+export const fetchShelvedBooks = () => {
+    debugger
+    return $.ajax({
+        method: 'GET',
+        url: '/api/shelved_books'
+    });
+};

@@ -1,10 +1,10 @@
 export const ADD_BOOK = "ADD_BOOK";
 export const REMOVE_BOOK = "REMOVE_BOOK";
+export const RECEIVE_ALL_SHELVED_BOOKS = "RECEIVE_ALL_SHELVED_BOOKS";
 
 import * as BookApi from '../util/books_api_util';
 
 export const addBook = shelved_book => {
-    debugger
     return {
         type: ADD_BOOK,
         shelved_book
@@ -12,10 +12,17 @@ export const addBook = shelved_book => {
 };
 
 export const removeBook = id => {
-    debugger
     return {
         type: REMOVE_BOOK,
         id
+    };
+};
+
+export const receiveAllShelvedBooks = shelved_books => {
+    debugger
+    return {
+        type: RECEIVE_ALL_SHELVED_BOOKS,
+        shelved_books
     };
 };
 
@@ -34,6 +41,16 @@ export const remove_from_shelf = id => {
         return BookApi.remove_from_shelf(id).then(
             id => {
                 return dispatch(removeBook(id));
+            }
+        );
+    };
+};
+
+export const fetchShelvedBooks = () => {
+    return dispatch => {
+        return BookApi.fetchShelvedBooks().then(
+            shelved_books => {
+                return dispatch(receiveAllShelvedBooks(shelved_books));
             }
         );
     };
