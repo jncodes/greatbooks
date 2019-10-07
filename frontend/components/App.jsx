@@ -18,10 +18,10 @@ const App = () => (
         <AuthRoute exact path="/sign_in" component={SignInPage} />
         <AuthRoute exact path="/sign_up" component={SignUpPage} />
 
-        {/* <Route path='/' component={NavBarSearchContainer} /> */}
+        <Route path='/' component={NavBarSearchContainer} />
 
         <ProtectedRoute path="/" component={Logout}/>
-        <Route path='/' component={BooksIndexContainer} />
+        <Route path='/search' component={BooksIndexContainer} />
         {/* <Browse /> */}
     </div>
 );

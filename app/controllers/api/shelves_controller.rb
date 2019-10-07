@@ -2,7 +2,6 @@ class Api::ShelvesController < ApplicationController
     def create
         @shelf = Shelf.new(shelf_params)
         @shelf.user_id = current_user.id
-
         if @shelf.save
             render :show
         else

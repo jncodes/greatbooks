@@ -4,6 +4,7 @@ class User < ApplicationRecord
     validates :password, length: { minimum: 6, allow_nil: true }
 
     after_initialize :ensure_session_token
+    after_create :create_default_shelves
 
     attr_reader :password
 
@@ -13,6 +14,10 @@ class User < ApplicationRecord
     has_many :shelved_books,
         through: :shelves,
         source: :shelved_books
+
+    def create_default_shelves
+        Shelf.default_shelves(self)
+    end
 
     def self.generate_session_token
         SecureRandom::urlsafe_base64

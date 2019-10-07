@@ -44,7 +44,7 @@ export default class navbarSearch extends React.Component {
         e.preventDefault();
         this.setState({ query: e.target.value }, () => {
             if (this.state.query !== "") {
-                this.prevProps.history.push(`/search/${this.state.query}`);
+                this.props.history.push(`/search`);
             }
         }); 
     }
@@ -54,7 +54,7 @@ export default class navbarSearch extends React.Component {
             <div className="searchbar">
                <form onSubmit={this.submitSearch}>
                     <input onChange={this.previewSearch} size="55" placeholder="Search" type="search"/>
-                    {/* <input type="submit" value="Search" /> */}
+                    <input type="submit" value="Search" />
                 </form>
             </div>
         ); 
