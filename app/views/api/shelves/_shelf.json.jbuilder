@@ -1,0 +1,1 @@
+json.extract! shelf, :id, :name, :exclusive, :user_id

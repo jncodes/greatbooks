@@ -1,0 +1,1 @@
+json.extract! shelved_book, :id, :book_id, :shelf_id

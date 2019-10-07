@@ -5,8 +5,6 @@ class Api::UsersController < ApplicationController
 
         if @user.save
             login!(@user)
-            # Shelf::default_shelves(@user)
-            # create 3 shelves in shelves table assigned to each new user
             render :show
         else
             render json: @user.errors.full_messages, status: 400

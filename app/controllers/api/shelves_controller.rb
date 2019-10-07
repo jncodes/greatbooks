@@ -20,7 +20,7 @@ class Api::ShelvesController < ApplicationController
     
     def destroy
         @shelf = Shelf.find(params[:id])
-        if @shelf 
+        if @shelf.exclusive = true
             render json: ['Cannot remove default table'], status: 403
         elsif @shelf.destroy
             render :show

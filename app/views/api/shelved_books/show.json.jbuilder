@@ -1,0 +1,1 @@
+json.partial! "api/shelved_books/shelved_book", shelved_book: @shelved_book

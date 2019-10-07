@@ -7,6 +7,8 @@ import Root from "./components/root";
     // import { signup, login, logout } from './util/session_api_util';
     // import { signup, login, logout } from './actions/session_actions';
     // import * as SearchApi from './util/search_util';
+    // import { add_to_shelf, remove_from_shelf } from './util/books_api_util';
+    import { add_to_shelf, remove_from_shelf } from './actions/books_actions';
 //test
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -41,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     //test
-    // window.getState = store.getState;
-    // window.dispatch = store.dispatch;
+    window.getState = store.getState;
+    window.dispatch = store.dispatch;
     //test
 
     //test
@@ -50,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // window.title = SearchApi.title;
     // window.author = SearchApi.author;
     // window.genre = SearchApi.genre;
+    //test
+
+    //test
+    window.add_to_shelf = add_to_shelf;
+    window.remove_from_shelf = remove_from_shelf;
     //test
         
     const root = document.getElementById('root');
