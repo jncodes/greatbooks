@@ -39,12 +39,12 @@ export default class navbarSearch extends React.Component {
     // componentDidUpdate(prevProps) {
     //     this.prevProps.history.push(`/search/${this.state.query}`);
     // }
-
+    
     submitSearch(e) {
         e.preventDefault();
         this.setState({ query: e.target.value }, () => {
             if (this.state.query !== "") {
-                this.props.search(this.state.query);
+                this.prevProps.history.push(`/search/${this.state.query}`);
             }
         }); 
     }

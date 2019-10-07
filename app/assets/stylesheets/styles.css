@@ -90,8 +90,8 @@ hr {
     margin-left: 12px;
 }
 .signup { 
-    display: block;
-    float: right;
+    /* display: block;
+    float: right; */
     color: rgb(56,33,16);
     font-size: 12px;
     line-height: 18px;
@@ -99,6 +99,9 @@ hr {
     margin-top: 25px;
     text-align: left;
     width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .signup input {
@@ -181,7 +184,7 @@ hr {
     background: #333333;
     border-radius: 4px 4px 0 0;
     color: white;
-    bottom: -33px;
+    bottom: -15px;
 }
 
 .next_to_home {
@@ -202,10 +205,11 @@ hr {
 .signuptop {
     font-size: 18px;
     font-weight: bold;
-    position: absolute;
-    top: 91px;
-    right: 22%;
+    width: 300px;
     color: black;
+    position: relative;
+    right: -45%;
+    bottom: 12px;
 }
 
 .searchbar {
@@ -220,3 +224,80 @@ hr {
     border-radius: 8px;
     margin-right: 332px;
 }
+
+/* Sign In / Sign Up Page Stand-alone Paths */
+.auth_standalone { /* form */
+    background-color: white;
+    height: 570px;
+    width: 600px;
+    border: 1px solid #d0d0c8;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px #d0d0c8;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.auth_header { /* header */
+    /* background-color: red; */
+    color: #382110;
+    font-size: 20px;
+    font-family: "Merriweather", Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.signup-standalone, .signin-standalone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signup-standalone input, .signin-standalone input {
+    /* background-color: blue; */
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+}
+.signup-standalone label, .signin-standalone label {
+    /* background-color: purple; */
+    display: flex;
+    color: rgb(51,51,51);
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 6px;
+}
+.signup-standalone li, .signin-standalone li {
+    color: red;
+}
+.signup-standalone input[type="submit"], .signin-standalone input[type="submit"] {
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    border: 1px solid #D6D0C4;
+    color: #333333;
+    background-color: #F4F1EA;
+    line-height: 1;
+    width: 100px;
+    height: 40px;
+    display:flex;
+}
+.standalone_signup {
+    color: rgb(51,51,51);
+    font-size: 12px;
+    position: relative;
+    left: 40%;
+    bottom: 8%;
+}
+.standalone_signup a {
+    color: #00635d;
+    margin-left: 20px;
+    position: relative;
+    left: 33%;
+    bottom: 109%;
+}
+
+
