@@ -21,7 +21,7 @@ class Api::ShelvesController < ApplicationController
     def destroy
         @shelf = Shelf.find(params[:id])
         if @shelf 
-            render json: ['Cannot remove default table'], status 403
+            render json: ['Cannot remove default table'], status: 403
         elsif @shelf.destroy
             render :show
         else
