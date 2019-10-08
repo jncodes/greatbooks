@@ -4,12 +4,9 @@ import BooksShow from './books_show';
 
 const msp = state => {
     const { books } = state.entities;
-    debugger
     return { books: books.items };
-    // debugger
     // if (state.entities.books.items) {
     //     book = state.entities.books.items.find(book => {
-    //         debugger
     //         props.history.location.pathname.includes(book.id + book.etag)
     //     })
     //     return { book: book };

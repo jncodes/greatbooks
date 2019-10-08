@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BooksShow = props => {
-    debugger
     // if (state.entities.books.items) {
         const book = props.books.find(book => {
             return props.history.location.pathname.includes(book.id + book.etag)
         });
-        debugger
     //     return { book: book };
     // } else { return {}; }
     // if (props.book) {
