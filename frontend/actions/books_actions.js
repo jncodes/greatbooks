@@ -19,7 +19,6 @@ export const removeBook = id => {
 };
 
 export const receiveAllShelvedBooks = shelved_books => {
-    debugger
     return {
         type: RECEIVE_ALL_SHELVED_BOOKS,
         shelved_books

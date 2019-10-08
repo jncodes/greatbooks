@@ -8,7 +8,7 @@ const entitiesReducer = combineReducers({
     users: usersReducer,
     books: booksReducer,
     shelvedbooks: shelvedbooksReducer,
-    // shelves: shelvesReducer
+    shelves: shelvesReducer
 });
 
 export default entitiesReducer;

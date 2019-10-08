@@ -29,6 +29,14 @@ class Api::ShelvesController < ApplicationController
         end
     end
 
+    def index
+        @shelves = Shelf.all
+    end
+
+    def show
+        @shelf = Shelf.find(params[:id])
+    end
+
     private
     def shelf_params
         params.require(:shelf).permit(:name)
