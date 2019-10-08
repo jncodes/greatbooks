@@ -9,6 +9,8 @@ import NavBarSearchContainer from '../components/search/navbar_search_container'
 import BooksIndexContainer from '../components/books/books_index_container';
 import BooksShowContainer from '../components/books/books_show_container';
 // import Browse from './browse';
+import SearchPage from './search_page';
+import ShowPage from './book_show_page';
 
 import SignUpPage from './signup_page';
 import SignInPage from './signin_page';
@@ -19,11 +21,11 @@ const App = () => (
         <AuthRoute exact path="/sign_in" component={SignInPage} />
         <AuthRoute exact path="/sign_up" component={SignUpPage} />
 
-        <Route path='/' component={NavBarSearchContainer} />
+        <Route exact path='/' component={NavBarSearchContainer} />
 
         <ProtectedRoute path="/" component={Logout}/>
-        <Route path='/search' component={BooksIndexContainer} />
-        <Route path='/books/show' component={BooksShowContainer} />
+        <Route path='/search' component={SearchPage} />
+        <Route path='/books/show' component={ShowPage} />
 
         {/* <Browse /> */}
     </div>

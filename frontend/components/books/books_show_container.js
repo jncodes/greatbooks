@@ -1,5 +1,7 @@
 import { connect } from 'react-redux';
 import BooksShow from './books_show';
+import { withRouter } from 'react-router-dom';
+
 // add addtoshelf, deletefromshelf
 
 const msp = state => {
@@ -19,4 +21,4 @@ const mdp = (dispatch, ownProps) => {
     };
 };
 
-export default connect(msp, mdp)(BooksShow);
+export default withRouter(connect(msp, mdp)(BooksShow));
