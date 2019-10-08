@@ -2,19 +2,14 @@ import { ADD_BOOK, REMOVE_BOOK, RECEIVE_ALL_SHELVED_BOOKS } from '../actions/boo
 
 export default (state = {}, action) => {
     Object.freeze(state);
-    // debugger
     switch (action.type) {
         case ADD_BOOK:
-            // debugger
-
-            // return Object.assign({}, state, {
-            //     [action.shelf.id]: [].push(action.book)
-            // });
-            // const newState = Object.assign({}, state);
-            // newState[shelvedBookIds].push(action.book.id);
+            return Object.assign({}, state, 
+                { [action.shelved_book.id]: action.shelved_book });
         case REMOVE_BOOK:
-            // debugger
-            // return ;
+            let newState = merge({}, state);
+            delete newState[action.id];
+            return newState;
         case RECEIVE_ALL_SHELVED_BOOKS:
             return Object.assign({}, state, action.shelved_books)
         default:

@@ -1,5 +1,3 @@
-# only need to save bookid etag
-
 class Api::ShelvedBooksController < ApplicationController
 
     def create

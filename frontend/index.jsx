@@ -8,9 +8,9 @@ import Root from "./components/root";
     // import { signup, login, logout } from './actions/session_actions';
     // import * as SearchApi from './util/search_util';
     // import { add_to_shelf, remove_from_shelf, fetchShelvedBooks } from './util/books_api_util';
-    import { add_to_shelf, remove_from_shelf, fetchShelvedBooks } from './actions/books_actions';
+    // import { add_to_shelf, remove_from_shelf, fetchShelvedBooks } from './actions/books_actions';
     // import { fetchShelves, createShelf, updateShelf, deleteShelf, fetchShelf } from './actions/shelves_actions';
-    import { fetchShelves, createShelf, updateShelf, deleteShelf, fetchShelf } from './util/shelves_api_util';
+    // import { fetchShelves, createShelf, updateShelf, deleteShelf, fetchShelf } from './util/shelves_api_util';
 //test
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     //test
-    window.getState = store.getState;
-    window.dispatch = store.dispatch;
+    // window.getState = store.getState;
+    // window.dispatch = store.dispatch;
     //test
 
     //test
@@ -57,15 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
     //test
 
     //test
-    window.add_to_shelf = add_to_shelf;
-    window.remove_from_shelf = remove_from_shelf;
-    window.fetchShelvedBooks = fetchShelvedBooks;
+    // window.add_to_shelf = add_to_shelf;
+    // window.remove_from_shelf = remove_from_shelf;
+    // window.fetchShelvedBooks = fetchShelvedBooks;
 
-    window.fetchShelves = fetchShelves;
-    window.fetchShelf = fetchShelf;
-    window.createShelf = createShelf;
-    window.updateShelf = updateShelf;
-    window.deleteShelf = deleteShelf;
+    // window.fetchShelves = fetchShelves;
+    // window.fetchShelf = fetchShelf;
+    // window.createShelf = createShelf;
+    // window.updateShelf = updateShelf;
+    // window.deleteShelf = deleteShelf;
     //test
         
     const root = document.getElementById('root');

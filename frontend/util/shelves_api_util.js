@@ -22,7 +22,6 @@ export const deleteShelf = id => {
 };
 
 export const fetchShelves = () => {
-    debugger
     return $.ajax({
         method: 'GET',
         url: '/api/shelves'

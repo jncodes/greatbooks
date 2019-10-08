@@ -36,12 +36,9 @@ export const createShelf = shelf => {
 };
 
 export const fetchShelves = () => {
-    debugger
     return dispatch => {
-        debugger
         return ShelfApi.fetchShelves().then(
             shelves => {
-                debugger
                 return dispatch(receiveAllShelves(shelves));
             }
         );
