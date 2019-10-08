@@ -5,7 +5,7 @@ const BooksIndex = props => {
     if (typeof props.books === 'undefined') {
         return null;
     } else {
-        const books = props.books.map(book => {
+        const books = props.books.map((book, idx) => {
             let id = book.id + book.etag;
             let title = book.volumeInfo.title || 'Not available.';
             let authors = book.volumeInfo.authors || ['Not available.'];
@@ -18,11 +18,13 @@ const BooksIndex = props => {
             return (
                 <BooksIndexItem
                     key={id}
+                    book_id={id}
                     title={title}
                     authors={authors}
                     description={description}
                     genres={genres}
                     image={image}
+                    idx={idx}
                  />
             );
         })

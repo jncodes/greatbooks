@@ -7,6 +7,7 @@ import Homepage from './session/homepage';
 import Logout from './session/logout_container';
 import NavBarSearchContainer from '../components/search/navbar_search_container';
 import BooksIndexContainer from '../components/books/books_index_container';
+import BooksShowContainer from '../components/books/books_show_container';
 // import Browse from './browse';
 
 import SignUpPage from './signup_page';
@@ -22,6 +23,8 @@ const App = () => (
 
         <ProtectedRoute path="/" component={Logout}/>
         <Route path='/search' component={BooksIndexContainer} />
+        <Route path='/books/show' component={BooksShowContainer} />
+
         {/* <Browse /> */}
     </div>
 );
