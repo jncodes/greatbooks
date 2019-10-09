@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BooksIndexItem = (props) => {
+    debugger
     return (
         <ul>
             <li><img src={props.image} alt="Image unavailable." /></li>

@@ -28,32 +28,36 @@ export default class BooksShow extends React.Component {
 
     render() {
         debugger
-        const { book } = this.state;
-        debugger
-        if (book === null) {
-            return (null);
+        if (typeof this.props.book === 'undefined') {
+            return null;
         } else {
+        const { book } = this.props;
+        const { bookId } = this.props;
+        debugger
+        // if (book === null) {
+        //     return (null);
+        // } else {
             // let id = book.id + book.etag;
-            let title = book.volumeInfo.title || 'Not available.';
-            let authors = book.volumeInfo.authors || ['Not available.'];
+            let title = book.title || 'Not available.';
+            let authors = book.authors || ['Not available.'];
             authors = authors.join(', ');
-            let genres = book.volumeInfo.categories || ['Not available.'];
+            let genres = book.categories || ['Not available.'];
             genres = genres.join(', ');
-            let description = book.volumeInfo.description || 'Not available.';
+            let description = book.description || 'Not available.';
             let image;
-            if (book.volumeInfo.imageLinks) image = book.volumeInfo.imageLinks.thumbnail;
+            if (book.imageLinks) image = book.imageLinks.thumbnail;
             return (
                 <div>
                     <ul>
                         <li><img src={image} alt="Image unavailable." /></li>
-                        <li>Title: <Link to={`/books/show/${id}`}>{title}</Link> by {authors}</li>
+                        <li>Title: <Link to={`/books/show/${bookId}`}>{title}</Link> by {authors}</li>
                         <li>Description: {description}</li>
                         <li>Genres: {genres}</li>
                         <br />
                     </ul>
                 </div>
             );
-        }
+        } //
     }
 
 } 
