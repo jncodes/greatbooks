@@ -1,9 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import { Redirect } from 'react-router-dom';
-
 // import BooksIndexContainer from '../components/books/books_index_container';
-
 
 export default class navbarSearch extends React.Component {
     
@@ -34,10 +31,6 @@ export default class navbarSearch extends React.Component {
     //             this.props.search(this.state.query);
     //         }
     //     }); 
-    // }
-
-    // componentDidUpdate(prevProps) {
-    //     this.prevProps.history.push(`/search/${this.state.query}`);
     // }
     
     submitSearch(e) {

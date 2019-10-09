@@ -25,3 +25,11 @@ export const genre = query => {
         url: 'https://www.googleapis.com/books/v1/volumes?q=insubject: ' + query
     });
 };
+
+export const book = bookId => {
+    debugger
+    return $.ajax({
+        method: 'GET',
+        url: 'https://www.googleapis.com/books/v1/volumes/' + bookId
+    });
+};

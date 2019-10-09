@@ -17,6 +17,7 @@ import SignInPage from './signin_page';
 
 const App = () => (
     <div>
+        
         <AuthRoute exact path="/" component={Homepage} />
         <AuthRoute exact path="/sign_in" component={SignInPage} />
         <AuthRoute exact path="/sign_up" component={SignUpPage} />
@@ -25,7 +26,7 @@ const App = () => (
 
         <ProtectedRoute path="/" component={Logout}/>
         <Route path='/search' component={SearchPage} />
-        <Route path='/books/show' component={ShowPage} />
+        <Route path='/books/show/:bookId' component={ShowPage} />
 
         {/* <Browse /> */}
     </div>

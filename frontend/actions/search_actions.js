@@ -2,6 +2,7 @@ export const GENERAL_SEARCH = "GENERAL_SEARCH";
 export const TITLE_SEARCH = "TITLE_SEARCH";
 export const AUTHOR_SEARCH = "AUTHOR_SEARCH";
 export const SUBJECT_SEARCH = "SUBJECT_SEARCH";
+export const BOOK_SEARCH = "BOOK_SEARCH";
 
 import * as SearchApi from '../util/search_util';
 
@@ -30,6 +31,14 @@ export const subjectSearch = query => {
     return {
         type: SUBJECT_SEARCH,
         query
+    };
+};
+
+export const bookSearch = book => {
+    debugger
+    return {
+        type: BOOK_SEARCH,
+        book
     };
 };
 
@@ -73,3 +82,15 @@ export const genre = query => {
     };
 };
 
+export const book = bookId => {
+    debugger
+    return dispatch => {
+        debugger
+        return SearchApi.book(bookId).then(
+            book => {
+                debugger
+                return dispatch(bookSearch(book));
+            }
+        );
+    };
+};

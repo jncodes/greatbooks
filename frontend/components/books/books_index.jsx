@@ -2,6 +2,7 @@ import React from 'react';
 import BooksIndexItem from './books_index_item';
 
 const BooksIndex = props => {
+    debugger
     if (typeof props.books === 'undefined') {
         return null;
     } else {
@@ -18,7 +19,7 @@ const BooksIndex = props => {
             return (
                 <BooksIndexItem
                     key={id}
-                    book_id={id}
+                    book_id={book.id}
                     title={title}
                     authors={authors}
                     description={description}
