@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './general/logo_homepage_link';
+import Logo from './general/logo_homepage_link_container';
 import NavBarSearchContainer from '../components/search/navbar_search_container';
 import BooksShowContainer from '../components/books/books_show_container';
 
