@@ -19,6 +19,10 @@ export default class BooksShow extends React.Component {
             let genres = book.categories || ['Not available.'];
             genres = genres.join(', ');
             let description = book.description || 'Not available.';
+            let html = description;
+            let div = document.createElement("div");
+            div.innerHTML = html;
+            let text = div.textContent || div.innerText || "";
             let image;
             if (book.imageLinks) image = book.imageLinks.thumbnail;
             return (
@@ -27,10 +31,10 @@ export default class BooksShow extends React.Component {
                         <ul>
                             <li><img className="show-image" src={image} alt="Image unavailable." /></li>
                         </ul>
-                        <ul className="show-detailss">
+                        <ul className="show-details">
                             <li className="show-title"><Link to={`/books/show/${bookId}`}>{title}</Link></li>
                             <li className="show-author">by <Link to="#">{authors}</Link></li>
-                            {/* <li>{description}</li> */}
+                            <li className="show-description">{text}</li>
                             {/* <li>Genres: {genres}</li> */}
                         </ul>
                         <br />

@@ -23,10 +23,25 @@
 
 .show-author {
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .show-author a { 
     text-decoration: none;
     color: #333;
     font-family: "Merriweather", "Georgia", serif;
+}
+
+.show-description {
+    /* background-color: pink; */
+
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #181818;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: "Merriweather", "Georgia", serif;
+    height: 150px;
+    margin-top: 20px;
+    overflow: scroll;
 }
