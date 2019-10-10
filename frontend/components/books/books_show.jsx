@@ -2,14 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default class BooksShow extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
     
     componentDidMount() {
         this.props.fetchBook(this.props.bookId);
-        // const book = this.props.fetchBook(this.props.bookId);
     }
 
     render() {

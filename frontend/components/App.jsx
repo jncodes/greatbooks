@@ -28,7 +28,7 @@ const App = () => (
         <Route path='/search' component={SearchPage} />
         <Route path='/books/show/:bookId' component={ShowPage} />
         
-        {/* <Route path='/genres/:subject' component={SearchPage} /> */}
+        <Route path='/genres/:subject' component={SearchPage} />
 
         {/* <ProtectedRoute path="/users/books/:userId" component={} /> */}
         {/* <Browse /> */}
