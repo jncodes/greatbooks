@@ -2,7 +2,8 @@ import { BOOK_SEARCH, GENERAL_SEARCH, TITLE_SEARCH, AUTHOR_SEARCH, SUBJECT_SEARC
 
 export default (state = {}, action) => {
     Object.freeze(state);
-    let newState = Object.assign({}, state);
+    // let newState = Object.assign({}, state);
+    let newState = {};
     switch (action.type) {
         case GENERAL_SEARCH:
             action.query.items.map(book => {
