@@ -1,0 +1,36 @@
+.book-item {
+    /* background-color: lightcoral; */
+
+    height: 133px;
+    display: flex;
+    border-top: 1px solid lightgrey;
+}
+
+.book-image {
+    object-fit: contain;
+    width: 50px;
+    margin-top: 6px;
+}
+
+.title a {
+    color: #333333;
+    font-family: "Merriweather", "Georgia", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+.details {
+    /* background-color: aqua; */
+
+    margin-left: 11px;
+    margin-top: 6px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.author a {
+    color: #333;
+    font-family: "Merriweather", "Georgia", serif;
+}
