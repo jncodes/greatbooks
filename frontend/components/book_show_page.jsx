@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Logo from './general/logo_homepage_link_container';
 import NavBarSearchContainer from '../components/search/navbar_search_container';
 import BooksShowContainer from '../components/books/books_show_container';

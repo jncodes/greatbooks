@@ -27,7 +27,7 @@ const BooksIndex = props => {
                     idx={idx}
                  />
             );
-        })
+        });
         return (
            <div>
                <ul>

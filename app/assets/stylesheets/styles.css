@@ -90,8 +90,6 @@ hr {
     margin-left: 12px;
 }
 .signup { 
-    /* display: block;
-    float: right; */
     color: rgb(56,33,16);
     font-size: 12px;
     line-height: 18px;
@@ -136,13 +134,6 @@ hr {
     font-weight: bolder;
 }
 
-/* #signedOutHome #navBar {
-    height: 65px;
-    padding-top: 10px;
-    
-    display: block;
-} */
-
 .header_second_nav {
     height: 295px;
     width: 970px;
@@ -172,6 +163,7 @@ hr {
     margin-bottom: 4px;
 }
 
+/* demo login */
 .header_second_nav button {
     position: relative;
     left: 43%;
@@ -184,7 +176,7 @@ hr {
     background: #333333;
     border-radius: 4px 4px 0 0;
     color: white;
-    bottom: -15px;
+    bottom: -6px;
 }
 
 .next_to_home {

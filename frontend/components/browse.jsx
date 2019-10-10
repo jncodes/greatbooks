@@ -1,46 +1,27 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-// const SUBJECTS = [
-//     "Art",
-//     "Biography",
-//     "Business",
-//     "Children's",
-//     "Christian",
-//     "Classics",
-//     "Comics",
-//     "Cookbooks",
-//     "Ebooks",
-//     "Fantasy",
-//     "Fiction",
-//     "Graphic Novels",
-//     "Historical Fiction",
-//     "History",
-//     "Horror",
-//     "Memoir",
-//     "Music",
-//     "Mystery",
-//     "Nonfiction",
-//     "Poetry",
-//     "Psychology",
-//     "Romance",
-//     "Science",
-//     "Science Fiction",
-//     "Self Help",
-//     "Sports",
-//     "Thriller",
-//     "Travel",
-//     "Young Adult"
-// ]
+import NavBarSearchContainer from '../components/search/navbar_search_container';
 
-// const BrowseSubjects = () => {
-//     SUBJECTS.map(subject => {
-//         return (
-//             <ul>
-//                 <li><Link to="#">{subject}</Link></li>
-//             </ul>
-//         );
-//     };
-// };
+const BrowseSubjects = props => {
+    const subjects = props.subjects.map((subject, idx) => {
+        return (
+            <div key={idx}>
+                <Link  to={`genres/${subject}`}>{subject}</Link>
+            </div>
+        );
+    });
+    return (
+        <div className="browse-box-container">
+            <div className="browse-box">
+                <p>Search and browse books</p>
+                <NavBarSearchContainer />
+                <div className="subject-list">
+                    {subjects}
+                </div>
+            </div>
+        </div>
+    )
+};
 
-// export default BrowseSubjects;
+export default BrowseSubjects;

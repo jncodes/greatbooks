@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from './general/logo_homepage_link_container';
-import BooksIndexContainer from '../components/books/books_index_container';
 import NavBarSearchContainer from '../components/search/navbar_search_container';
+import BooksIndexContainer from '../components/books/books_index_container';
 
 const searchPage = () => (
     <div className="psuedo-body">
