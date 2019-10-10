@@ -33,4 +33,5 @@
 .author a {
     color: #333;
     font-family: "Merriweather", "Georgia", serif;
+    text-decoration: none;
 }

@@ -32,7 +32,7 @@ componentDidMount() {
                         genres={genres}
                         image={image}
                         idx={idx}
-                     />
+                    />
                 );
             });
             return (

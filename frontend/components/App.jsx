@@ -30,7 +30,7 @@ const App = () => (
         
         <Route path='/genres/:subject' component={SearchPage} />
 
-        <Route path="/users/books/:userId" render={() => (<Redirect to="/sign_up" />)} />  />
+        <Route path="/users/books/:userId" render={() => (<Redirect to="/sign_up" />)} />
     </div>
 );
 

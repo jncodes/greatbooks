@@ -23,11 +23,16 @@ export default class BooksShow extends React.Component {
             if (book.imageLinks) image = book.imageLinks.thumbnail;
             return (
                 <div>
-                    <ul>
-                        <li><img src={image} alt="Image unavailable." /></li>
-                        <li>Title: <Link to={`/books/show/${bookId}`}>{title}</Link> by {authors}</li>
-                        <li>Description: {description}</li>
-                        <li>Genres: {genres}</li>
+                    <ul className="book-container">
+                        <ul>
+                            <li><img className="show-image" src={image} alt="Image unavailable." /></li>
+                        </ul>
+                        <ul className="show-detailss">
+                            <li className="show-title"><Link to={`/books/show/${bookId}`}>{title}</Link></li>
+                            <li className="show-author">by <Link to="#">{authors}</Link></li>
+                            {/* <li>{description}</li> */}
+                            {/* <li>Genres: {genres}</li> */}
+                        </ul>
                         <br />
                     </ul>
                 </div>

@@ -1,0 +1,32 @@
+.book-container {
+    /* background-color: orange; */
+
+    display: flex;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.show-image {
+    object-fit: fill;
+    width: 150px;
+}
+
+.show-title a {
+    color: #333333;
+    font-family: "Merriweather", "Georgia", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.show-author {
+    margin-left: 20px;
+}
+
+.show-author a { 
+    text-decoration: none;
+    color: #333;
+    font-family: "Merriweather", "Georgia", serif;
+}
