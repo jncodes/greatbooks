@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link, Route, Redirect } from 'react-router-dom';
 
-import { Link, Route } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SigninFormContainer from './session/signin_form_container';
 import Homepage from './session/homepage';
@@ -30,8 +30,7 @@ const App = () => (
         
         <Route path='/genres/:subject' component={SearchPage} />
 
-        {/* <ProtectedRoute path="/users/books/:userId" component={} /> */}
-        {/* <Browse /> */}
+        <Route path="/users/books/:userId" render={() => (<Redirect to="/sign_up" />)} />  />
     </div>
 );
 
