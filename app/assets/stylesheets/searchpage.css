@@ -1,0 +1,120 @@
+.psuedo-body {
+    /*  */
+}
+
+/* ---------------------------------------------------------------------- */
+
+.navbar-container {
+    background-color: #F4F1EA;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    height: auto;
+    min-width: 1220px;
+}
+
+.navbar input[type="search"] {
+    /* background-color: white; */
+    width: 500px;
+    max-width: 100%;
+    /* width: 100%; */
+    height: auto;
+    /* padding: 10px 20px; */
+    padding: 4px 26px 4px 8px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: #DCD6CC 1px solid;
+    color: #333333;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0 15px;
+    color: #382110;
+    font-size: 16px;
+    line-height: 50px;
+}
+.navbar a:hover {
+    background-color: #382110;
+    color: white;
+}
+
+.pages-logo :link {
+    width: 140px;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(56,33,16);
+    padding: 0px;
+    font-size: 31px;
+    font-weight: lighter;
+}
+
+.pages-logo strong {
+    font-weight: bolder;
+}
+
+.pages-logo :link:hover {
+    background-color: #F4F1EA;
+    color: rgb(56,33,16);
+}
+
+.navbar input[type="image"] {
+    position: relative;
+    right: 21px;
+    top: 1px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.content-container {
+    /* background-color: purple; */
+
+    width: 100%
+}
+
+.content {
+    /* background: aqua; */
+
+    width: 970px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 50px;
+}
+
+.heading-container {
+    /* background-color: black; */
+
+    width: 100%;
+    display: inline-block;
+}
+
+.heading {
+    /* background-color: green; */
+
+    font-size: 20px;
+    font-family: "Merriweather", Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    color: #382110;
+    line-height: 24px;
+    margin: 10px 10px 15px 10px;
+}
+
+
+.results-container {
+    background-color: maroon;
+
+    width: 625px;
+    padding: 0 8px;
+}

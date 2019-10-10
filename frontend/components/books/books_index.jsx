@@ -2,14 +2,11 @@ import React from 'react';
 import BooksIndexItem from './books_index_item';
 
 const BooksIndex = props => {
-    debugger
     if (typeof props.books === 'undefined') {
         return null;
     } else {
-        debugger
         const books = props.books.map((book, idx) => {
             let id = props.bookId[idx] + idx;
-            debugger
             let title = book.title || 'Not available.';
             let authors = book.authors || ['Not available.'];
             authors = authors.join(', ');

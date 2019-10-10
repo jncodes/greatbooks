@@ -28,6 +28,7 @@ const App = () => (
         <Route path='/search' component={SearchPage} />
         <Route path='/books/show/:bookId' component={ShowPage} />
 
+        {/* <ProtectedRoute path="/users/books/:userId" component={} /> */}
         {/* <Browse /> */}
     </div>
 );

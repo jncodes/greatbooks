@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './general/logo_homepage_link';
+import Logo from './general/logo_homepage_link_container';
 import SignInFormContainer from './session/signin_form_container';
 
 const HeaderTopNav = () => {

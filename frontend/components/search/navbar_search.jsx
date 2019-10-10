@@ -43,11 +43,14 @@ export default class navbarSearch extends React.Component {
     }
     
     render() {
+        // size="55" className="searchbar"
         return (
-            <div className="searchbar">
+            <div >
                <form onSubmit={this.submitSearch}>
-                    <input onChange={this.previewSearch} size="55" placeholder="Search" type="search"/>
-                    <input type="submit" value="Search" />
+                    <input onChange={this.previewSearch} placeholder="Search" type="search"/>
+                    {/* <input type="submit" value="Search" /> */}
+                    {/* <img src="https://s.gr-assets.com/assets/layout/magnifying_glass-a2d7514d50bcee1a0061f1ece7821750.png" alt=""/> */}
+                    <input type="image" src="https://s.gr-assets.com/assets/layout/magnifying_glass-a2d7514d50bcee1a0061f1ece7821750.png" alt="Submit"/>
                 </form>
             </div>
         ); 

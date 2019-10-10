@@ -35,7 +35,6 @@ export const subjectSearch = query => {
 };
 
 export const bookSearch = book => {
-    debugger
     return {
         type: BOOK_SEARCH,
         book
@@ -83,12 +82,9 @@ export const genre = query => {
 };
 
 export const book = bookId => {
-    debugger
     return dispatch => {
-        debugger
         return SearchApi.book(bookId).then(
             book => {
-                debugger
                 return dispatch(bookSearch(book));
             }
         );
