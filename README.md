@@ -22,11 +22,12 @@ Each user will have three default bookshelves (reading, read, to read). Users ca
 * Redux
 * Google Books API
 * Javascript
-* ![Ruby Rails Application Framework](https://icon-library.net/icon/ruby-icon-png-29.html)
+* Ruby Rails Application Framework
 * Postgresql
 * JBuilder
 * CSS
 * jQuery
+![](https://icon-library.net//images/ruby-icon-png/ruby-icon-png-29.jpg)
 
 ## Future features
 * User stats
