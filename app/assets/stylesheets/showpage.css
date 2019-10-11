@@ -11,6 +11,10 @@
     width: 150px;
 }
 
+.show-title {
+    margin-left: 20px;
+}
+
 .show-title a {
     color: #333333;
     font-family: "Merriweather", "Georgia", serif;
@@ -18,7 +22,6 @@
     font-weight: 700;
     line-height: 1.25;
     text-decoration: none;
-    margin-left: 20px;
 }
 
 .show-author {

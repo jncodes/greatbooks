@@ -39,14 +39,14 @@
     color: #333333;
 }
 
-.navbar a {
+.navbar a, .logout {
     text-decoration: none;
     padding: 0 15px;
     color: #382110;
     font-size: 16px;
     line-height: 50px;
 }
-.navbar a:hover {
+.navbar a:hover, .logout:hover {
     background-color: #382110;
     color: white;
 }
@@ -117,4 +117,10 @@
 
     width: 625px;
     padding: 0 8px;
+}
+
+.logout {
+    background: none;
+	border: none;
+
 }
