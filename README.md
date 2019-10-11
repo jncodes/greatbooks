@@ -16,7 +16,7 @@ Each user will have three default bookshelves (reading, read, to read). Users ca
 ***
 ## Project Challenges
 * Formatting and normalizing 3rd party API data for use in combination with data from application database
-    * ```sh
+    ```sh
     let image;
     if (book.imageLinks) image = book.imageLinks.thumbnail;
     ```
