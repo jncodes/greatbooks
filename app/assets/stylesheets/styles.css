@@ -295,10 +295,7 @@ hr {
 }
 
 .errors {
-    /* color: red; */
     position: inherit;
-    /* bottom: 35%;
-    right: 42%; */
     background-color: #fdb7ad;
     margin: 16px;
     border: 1px solid #FA604A;
