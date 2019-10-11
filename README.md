@@ -20,9 +20,9 @@ Each user will have three default bookshelves (reading, read, to read). Users ca
     * Use reducers to manipulate data for storage in frontend state
 * Auto-generating mutually-exclusive default user bookshelves
     * Use Active Record Callbacks and custom class methods to create database entries in multiple tables with a single prompt
-    `after_create :create_default_shelves`
+    * ex. `after_create :create_default_shelves`
     * Add database constraints and model-level validations
-    `validates :book_id, uniqueness: { scope: :shelf_id }`
+    * ex. `validates :book_id, uniqueness: { scope: :shelf_id }`
         * Ensure a book can only have a single entry / appearance on a particular bookshelf
         * Ensure a book can only appear on one of the default bookshelves at any given time
 
