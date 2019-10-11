@@ -19,11 +19,14 @@ Each user will have three default bookshelves (reading, read, to read). Users ca
 ***
 ## Technologies utilized:
 * React
-* ![React](https://www.flaticon.com/free-icon/react_919851#term=React&page=1&position=1)
 * Redux
 * Google Books API
-* [Ruby Rails Application Framework](https://www.flaticon.com/free-icon/ruby_919842)
+* Javascript
+* ![Ruby Rails Application Framework](https://icon-library.net/icon/ruby-icon-png-29.html)
 * Postgresql
+* JBuilder
+* CSS
+* jQuery
 
 ## Future features
 * User stats
