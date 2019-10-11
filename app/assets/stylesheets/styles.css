@@ -263,8 +263,9 @@ hr {
     font-size: 12px;
     margin-left: 6px;
 }
-.signup-standalone li, .signin-standalone li {
-    color: red;
+.signup li, .signin li {
+    /* color: red; */
+    display: none;
 }
 .signup-standalone input[type="submit"], .signin-standalone input[type="submit"] {
     font-size: 16px;
@@ -293,4 +294,16 @@ hr {
     bottom: 109%;
 }
 
-
+.errors {
+    /* color: red; */
+    position: absolute;
+    bottom: 35%;
+    right: 42%;
+    background-color: #fdb7ad;
+    margin: 16px;
+    border: 1px solid #FA604A;
+    border-radius: 3px;
+    color: #333333;
+    padding: 12px;
+    text-align: center;
+}

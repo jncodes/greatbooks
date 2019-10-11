@@ -21,17 +21,23 @@ export default class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+        if (this.props.formType === 'Sign up') {
+            this.props.history.push(`/sign_up`);
+        } else {
+            this.props.history.push(`/sign_in`);
+        }
     }
 
     renderErrors() {
         if (this.props.errors.length === 0) {
             return null;
         } else {
+            // this.props.history.push(`/${this.state.page}`);
             return (
                 <ul>
                     {
                         this.props.errors.map((error, idx) => (
-                            <li key={`error-${idx}`}>{error}</li>
+                            <li className="errors" key={`error-${idx}`}>{error}</li>
                         ))
                     }
                 </ul>
@@ -41,6 +47,7 @@ export default class SessionForm extends React.Component {
     
     componentDidMount() {
         this.setState({ page: window.location.href });
+        // this.renderErrors();
     }
 
     render() {
@@ -52,7 +59,7 @@ export default class SessionForm extends React.Component {
         this.state.page.includes('/sign_') ? (email_inside = 'you@yours.com') : (email_inside ='Email address')
         let password_inside;
         this.state.page.includes('/sign_') ? (password_inside = '') : (password_inside ='Password')
-
+        // this.renderErrors()
         return (    
             <form className={`${style}${path}`} onSubmit={this.handleSubmit}>
                 
