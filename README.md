@@ -5,7 +5,7 @@ __Greatbooks is an application clone of [Goodreads](https://www.goodreads.com). 
 ***
 ## Key features:
 ### **User Authentication**
-#### Users can create an account and securely login and logout
+* Users can create an account and securely login and logout
 ### **Open Browsing**
 #### Users can navigate the search and browsing features without logging in
 ### **Demo Login**
