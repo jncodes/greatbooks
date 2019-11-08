@@ -1,7 +1,7 @@
 # README
 
 # [Greatbooks](https://grandbooks.herokuapp.com/#/)
-__Greatbooks is an application clone of [Goodreads](https://www.goodreads.com).  This application utilizes [Google Books API](https://books.google.com) to allow users to search and browse books. Users that create an account can save customized lists of books, as bookshelves.__
+__Greatbooks is a single-page application inspired by [Goodreads](https://www.goodreads.com).  This application utilizes [Google Books API](https://books.google.com) to allow users to search and browse books. Users that create an account can save customized lists of books, as bookshelves.__
 ***
 ## Key features:
 ### **User Authentication**
@@ -35,9 +35,9 @@ Each user will have three default bookshelves (reading, read, to read). Users ca
 * React
 * Redux
 * Google Books API
-* Javascript
-* Ruby Rails Application Framework
-* PostgreSQL
+* JavaScript
+* Ruby on Rails Application Framework
+* postgreSQL
 * JBuilder
 * CSS
 * jQuery
@@ -48,4 +48,4 @@ Each user will have three default bookshelves (reading, read, to read). Users ca
 * Reading stats
     * How many books have you read this year? How often are you reading? 
 
-# (An Application Clone of [![Goodreads](https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png)](https://www.goodreads.com))
+# (Inspired by [![Goodreads](https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png)](https://www.goodreads.com))
